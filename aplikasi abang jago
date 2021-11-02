@@ -1,0 +1,28 @@
+package pkgif.pkgelse.java;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author anakit
+ */
+public class IfElseJava {
+    public static void main(String[] args) {
+   Scanner anakit = new Scanner(System.in);
+   String kategori;
+   System.out.print("Berapa Umur Anda? (angka saja) :");int umur = anakit.nextInt();
+   if (umur < 5){
+    kategori = "Wah Masih Balita Ternyata";   
+    }else if (umur < 12){
+    kategori = "Kamu Mah Masih Bocah";   
+    }else if (umur < 18){
+    kategori = "Cie yang sudah remaja";   
+    }else if (umur < 40){
+    kategori = "Sudah Masuk Kategori Dewasa";   
+    }else if (umur < 60){
+    kategori = "Orang Tua, Sudah bisa Banyak Istirahat";   
+    }else {
+    kategori = "Awas Entar Lagi Ko'it.. wkwkwkwk";
+    }
+   System.out.println("Umur "+umur+", "+kategori);
+    }
+}
